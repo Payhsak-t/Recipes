@@ -1,41 +1,43 @@
-.landing {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+  margin: 0;
   padding: 0;
-  position: relative;
+  box-sizing: border-box;
+  background: rgb(148, 106, 106);
+}
+
+.App {
   width: 100%;
-  height: 25rem;
-  z-index: 0;
-  overflow: hidden;
-}
-
-.landing img {
-  width: 110%;
   height: 100%;
-  opacity: 0.8;
-  object-fit: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Poppins', sans-serif;
 }
 
-.search {
-  position: absolute;
-  background-color: rgba(20, 20, 20, 0.4);
-  bottom: calc(72% - 11.1rem);
-  display: flex;
-  flex-direction: column;
+.recipe__items {
+  padding: 1rem 1rem 2rem 1rem;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 25rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
-.search h1 {
-  color: #fff;
-  letter-spacing: 2rem;
-  font-size: 10vh;
-  text-shadow: 2px 2px #c4c1c1;
-  margin-bottom: 0.1rem;
+.header {
+  cursor: pointer;
+  color: white;
+  align-items: center;
+  justify-content: center;
+}
+.header h1 {
+  font-weight: bold;
 }
 
-.search p {
+.show-text {
+  margin-top: 2rem;
+  border-radius: 5px;
+  font-weight: bold;
   color: #fff;
-  font-size: 4.2vh;
-  margin-top: 0;
+  font-size: 1.6rem;
 }
